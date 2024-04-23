@@ -8,11 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "DevDanny",
   description: "Replica of Dennis's website ",
-  metadataBase: new URL("https://next-dashboard.pinkjelly.org/"),
-  openGraph: {
-    title: "DevDanny",
-    description: "Replica of Davis Website",
-  },
+  metadataBase: new URL("https://next-learn-dashboard.vercel.sh"),
 };
 
 export default function RootLayout({
