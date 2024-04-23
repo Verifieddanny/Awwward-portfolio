@@ -18,7 +18,7 @@ function Rounded({
 }: Getin) {
   const circle = useRef(null);
 
-  let timeline = useRef(null);
+  let timeline: any = useRef(null);
 
   let timeoutId: any = null;
 
