@@ -50,10 +50,10 @@ function Contact() {
         </div>
 
         <div className="c-nav">
-          <div className="c-button">
+          <div className="c-button buz">
             <p>dannyclassic56@gmail.com</p>
           </div>
-          <div className="c-button">
+          <div className="c-button buz">
             <p>+234 906 7522 357</p>
           </div>
         </div>

@@ -77,6 +77,17 @@
   cursor: pointer;
 }
 
+@media (min-height: 680px), screen and (orientation: portrait) {
+  .description {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 2rem;
+  }
+  .mbutton {
+    position: static;
+  }
+}
+
 .mbutton p {
   margin: 0px;
 

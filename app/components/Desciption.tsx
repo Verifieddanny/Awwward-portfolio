@@ -45,8 +45,11 @@ function Desciption() {
   const isInView = useInView(description);
 
   return (
-    <div ref={description} className="description">
-      <div className="mbody">
+    <div
+      ref={description}
+      className="description md:flex-row flex-col md:pb-0 pb-8 md:mb-0 mb-8"
+    >
+      <div className="mbody md:flex-row flex-col">
         <p>
           {phrase.split(" ").map((word, index) => {
             return (
@@ -67,7 +70,7 @@ function Desciption() {
           me in a unique place in the web design world.
         </motion.p>
         <div data-scroll data-scroll-speed={0.1}>
-          <div className="mbutton">
+          <div className="mbutton md:absolute static md:left-[calc(100% - 200px)] left-0">
             <p>About me</p>
           </div>
         </div>
