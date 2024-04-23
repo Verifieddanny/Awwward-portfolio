@@ -17,7 +17,7 @@ export default function Home() {
       const Locomotive = (await import("locomotive-scroll")).default;
 
       new Locomotive({
-        el: refScrollContainer.current,
+        el: refScrollContainer.current ?? document.body,
         smooth: true,
       });
 
