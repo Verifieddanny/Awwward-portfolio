@@ -9,7 +9,6 @@ export const metadata: Metadata = {
   title: "DevDanny",
   description: "Replica of Dennis's website ",
   openGraph: {
-    images: ["opengraph-image.jpg"],
     title: "DevDanny",
     description: "Replica of Davis Website",
   },
