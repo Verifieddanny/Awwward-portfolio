@@ -6,7 +6,7 @@ const useIsomorphicLayoutEffect =
   typeof window !== "undefined" ? useLayoutEffect : useEffect;
 
 export default function Magnetic({ children }: { children: JSX.Element }) {
-  const magnetic = useRef(null);
+  const magnetic: any = useRef(null);
 
   useIsomorphicLayoutEffect(() => {
     let ctx = gsap.context(() => {
@@ -20,7 +20,7 @@ export default function Magnetic({ children }: { children: JSX.Element }) {
         ease: "elastic.out(1, 0.3)",
       });
 
-      magnetic.current.addEventListener("mousemove", (e) => {
+      magnetic.current.addEventListener("mousemove", (e: any) => {
         const { clientX, clientY } = e;
         const { height, width, left, top } =
           magnetic.current.getBoundingClientRect();
@@ -29,7 +29,7 @@ export default function Magnetic({ children }: { children: JSX.Element }) {
         xTo(x * 0.35);
         yTo(y * 0.35);
       });
-      magnetic.current.addEventListener("mouseleave", (e) => {
+      magnetic.current.addEventListener("mouseleave", (e: any) => {
         xTo(0);
         yTo(0);
       });
