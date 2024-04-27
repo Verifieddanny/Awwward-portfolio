@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "DevDanny",
   description: "Replica of Dennis's website ",
-  metadataBase: new URL("https://next-learn-dashboard.vercel.sh"),
+  metadataBase: new URL("https://awwward-portfolio.vercel.app"),
 };
 
 export default function RootLayout({
