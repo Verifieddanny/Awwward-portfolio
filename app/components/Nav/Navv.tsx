@@ -10,25 +10,25 @@ const navItems = [
   {
     title: "Home",
 
-    href: "/",
+    href: "#top",
   },
 
   {
     title: "Work",
 
-    href: "/work",
+    href: "#work",
   },
 
   {
     title: "About",
 
-    href: "/about",
+    href: "#about",
   },
 
   {
     title: "Contact",
 
-    href: "/contact",
+    href: "#contact",
   },
 ];
 
@@ -41,7 +41,7 @@ const menuSlide = {
   },
 };
 
-function Nav() {
+function Nav({ setIsActive }: { setIsActive: (isActive: boolean) => void }) {
   const pathname = usePathname();
 
   const [selectedIndicator, setSelectedIndicator] = useState(pathname);
@@ -75,6 +75,7 @@ function Nav() {
                   index={index}
                   isActive={isActive}
                   setSelectedIndicator={setSelectedIndicator}
+                  setIsActive={setIsActive}
                 ></Links>
               );
             })}

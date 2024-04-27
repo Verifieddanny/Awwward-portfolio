@@ -58,6 +58,7 @@ function Landing() {
           delay: 2.5,
         },
       }}
+      id="top"
       className="relative flex h-screen overflow-hidden"
     >
       <Image

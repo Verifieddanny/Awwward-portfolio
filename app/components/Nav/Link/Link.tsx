@@ -12,6 +12,7 @@ interface GetIn {
   isActive: boolean;
   setSelectedIndicator: any;
   index: number;
+  setIsActive: (isActive: boolean) => void;
 }
 
 const slide = {
@@ -31,7 +32,13 @@ const scale = {
   closed: { scale: 0, transition: { duration: 0.4 } },
 };
 
-function Links({ data, isActive, setSelectedIndicator, index }: GetIn) {
+function Links({
+  data,
+  isActive,
+  setSelectedIndicator,
+  index,
+  setIsActive,
+}: GetIn) {
   const { title, href } = data;
   return (
     <motion.div
@@ -53,7 +60,9 @@ function Links({ data, isActive, setSelectedIndicator, index }: GetIn) {
       ></motion.div>
 
       <Magnetic>
-        <Link href={href}>{title}</Link>
+        <a href={href} onClick={() => setIsActive(false)}>
+          {title}
+        </a>
       </Magnetic>
     </motion.div>
   );

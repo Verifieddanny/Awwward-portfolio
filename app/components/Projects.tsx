@@ -40,7 +40,7 @@ function Projects() {
   const [modal, setModal] = useState<ModalState>({ active: false, index: 0 });
 
   return (
-    <main className="flex h-screen items-center justify-center">
+    <main id="work" className="flex h-screen items-center justify-center">
       <div className="w-[1000px] flex flex-col items-center justify-center">
         {projects.map((project, index) => (
           <>

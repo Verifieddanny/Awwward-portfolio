@@ -46,6 +46,7 @@ function Desciption() {
 
   return (
     <div
+      id="about"
       ref={description}
       className="description md:flex-row flex-col md:pb-0 pb-8 md:mb-0 mb-8"
     >

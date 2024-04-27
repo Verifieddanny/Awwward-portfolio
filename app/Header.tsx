@@ -56,30 +56,32 @@ function Header() {
   return (
     <>
       <div ref={header} className="header">
-        <div className="logo">
-          <p className="copyright">©</p>
-          <div className="name">
-            <p className="codeBy">Code by</p>
-            <p className="daniel">Daniel</p>
-            <p className="nwachukwu">Nwachukwu</p>
+        <a href="#top">
+          <div className="logo">
+            <p className="copyright">©</p>
+            <div className="name">
+              <p className="codeBy">Code by</p>
+              <p className="daniel">Daniel</p>
+              <p className="nwachukwu">Nwachukwu</p>
+            </div>
           </div>
-        </div>
+        </a>
         <div className="nav">
           <div className="el">
             <Magnetic>
-              <a>Work</a>
+              <a href="#work">Work</a>
             </Magnetic>
             <div className="indicator"></div>
           </div>
           <div className="el">
             <Magnetic>
-              <a>About</a>
+              <a href="#about">About</a>
             </Magnetic>
             <div className="indicator"></div>
           </div>
           <div className="el">
             <Magnetic>
-              <a>Contact</a>
+              <a href="#contact">Contact</a>
             </Magnetic>
             <div className="indicator"></div>
           </div>
@@ -90,7 +92,9 @@ function Header() {
           <div className={`burger ${isActive ? "burgerActive" : ""}`}></div>
         </div>
       </div>
-      <AnimatePresence mode="wait">{isActive && <Nav />}</AnimatePresence>
+      <AnimatePresence mode="wait">
+        {isActive && <Nav setIsActive={setIsActive} />}
+      </AnimatePresence>
     </>
   );
 }

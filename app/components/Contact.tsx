@@ -19,7 +19,7 @@ function Contact() {
 
   const rotate = useTransform(scrollYProgress, [0, 1], [120, 90]);
   return (
-    <motion.div style={{ y }} ref={container} className="contact">
+    <motion.div id="contact" style={{ y }} ref={container} className="contact">
       <div className="c-body">
         <div className="c-title">
           <span>
