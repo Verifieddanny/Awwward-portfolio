@@ -81,13 +81,23 @@ function Nav({ setIsActive }: { setIsActive: (isActive: boolean) => void }) {
             })}
           </div>
           <div className="footer">
-            <a>Awwwards</a>
+            <Magnetic>
+              <p>Awwwards</p>
+            </Magnetic>
 
-            <a>Instagram</a>
+            <Magnetic>
+              <Link href="https://github.com/Verifieddanny">Github</Link>
+            </Magnetic>
 
-            <a>Dribble</a>
+            <Magnetic>
+              <Link href="https://twitter.com/dannyclassi_c">Twitter</Link>
+            </Magnetic>
 
-            <a>LinkedIn</a>
+            <Magnetic>
+              <Link href="https://www.linkedin.com/in/devdanny0/">
+                Linkedin
+              </Link>
+            </Magnetic>
           </div>
         </div>
         <Curve />

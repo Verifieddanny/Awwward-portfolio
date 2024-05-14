@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useScroll, motion, useTransform, useSpring } from "framer-motion";
 import "./slider/contact.css";
 import Magnetic from "./common/magnetic";
+import Link from "next/link";
 
 function Contact() {
   const container = useRef(null);
@@ -77,15 +78,17 @@ function Contact() {
               </Magnetic>
 
               <Magnetic>
-                <p>Instagram</p>
+                <Link href="https://github.com/Verifieddanny">Github</Link>
               </Magnetic>
 
               <Magnetic>
-                <p>Dribbble</p>
+                <Link href="https://twitter.com/dannyclassi_c">Twitter</Link>
               </Magnetic>
 
               <Magnetic>
-                <p>Linkedin</p>
+                <Link href="https://www.linkedin.com/in/devdanny0/">
+                  Linkedin
+                </Link>
               </Magnetic>
             </span>
           </div>
