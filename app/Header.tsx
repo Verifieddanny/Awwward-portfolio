@@ -66,7 +66,7 @@ function Header() {
             </div>
           </div>
         </a>
-        <div className="nav">
+        <div className="nav  md:flex hidden">
           <div className="el">
             <Magnetic>
               <a href="#work">Work</a>
